@@ -73,3 +73,28 @@ def save_chat_history(user_message, bot_response):
         file.write(f"You: {user_message}\n")
         file.write(f"Bot: {bot_response}\n")
         file.write("-" * 50 + "\n")
+
+        # ==========================
+# Chat Loop
+# ==========================
+
+def chat():
+    """
+    Start the chatbot conversation.
+    """
+
+    while True:
+
+        user_message = input("\nYou: ").strip()
+
+        bot_response = get_bot_response(user_message)
+
+        print(f"Bot: {bot_response}")
+
+        save_chat_history(
+            user_message,
+            bot_response
+        )
+
+        if user_message.lower() == "bye":
+            break
