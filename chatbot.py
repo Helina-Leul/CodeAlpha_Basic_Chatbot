@@ -98,3 +98,24 @@ def chat():
 
         if user_message.lower() == "bye":
             break
+
+        # ==========================
+# Main Program
+# ==========================
+
+def main():
+    """
+    Main function that runs the chatbot.
+    """
+
+    display_welcome()
+
+    chat()
+
+    print("\nThank you for chatting with me!")
+# ==========================
+# Run Program
+# ==========================
+
+if __name__ == "__main__":
+    main()

@@ -23,3 +23,23 @@ Date: 2026-07-10 00:49:58.732656
 You: bye
 Bot: Goodbye! Have a wonderful day.
 --------------------------------------------------
+
+Date: 2026-07-10 01:01:47.456271
+You: hello
+Bot: Hello! Nice to meet you.
+--------------------------------------------------
+
+Date: 2026-07-10 01:01:53.322061
+You: how are you
+Bot: I'm doing great! Thanks for asking.
+--------------------------------------------------
+
+Date: 2026-07-10 01:02:04.314703
+You: where do you live
+Bot: I'm sorry, I don't understand that yet. Please try another question.
+--------------------------------------------------
+
+Date: 2026-07-10 01:02:13.709057
+You: bye
+Bot: Goodbye! Have a wonderful day.
+--------------------------------------------------
