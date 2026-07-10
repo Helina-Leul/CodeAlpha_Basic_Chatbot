@@ -38,3 +38,22 @@ def display_welcome():
     print("Hello! I'm your friendly chatbot.")
     print("Type 'bye' anytime to end the conversation.")
     print("=" * 50)
+
+# ==========================
+# Get Bot Response
+# ==========================
+
+def get_bot_response(user_message):
+    """
+    Return the chatbot's response based on the user's message.
+    """
+
+    user_message = user_message.lower().strip()
+
+    if user_message in RESPONSES:
+        return RESPONSES[user_message]
+
+    return (
+        "I'm sorry, I don't understand that yet. "
+        "Please try another question."
+    )
