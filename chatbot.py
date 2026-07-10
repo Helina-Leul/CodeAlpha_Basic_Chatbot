@@ -57,3 +57,19 @@ def get_bot_response(user_message):
         "I'm sorry, I don't understand that yet. "
         "Please try another question."
     )
+
+# ==========================
+# Save Chat History
+# ==========================
+
+def save_chat_history(user_message, bot_response):
+    """
+    Save each conversation to chat_history.txt.
+    """
+
+    with open("chat_history.txt", "a") as file:
+
+        file.write(f"\nDate: {datetime.now()}\n")
+        file.write(f"You: {user_message}\n")
+        file.write(f"Bot: {bot_response}\n")
+        file.write("-" * 50 + "\n")
